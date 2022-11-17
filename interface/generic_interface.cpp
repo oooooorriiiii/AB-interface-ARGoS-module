@@ -282,12 +282,12 @@ void GethInterface::removePeer(string enode) {
 }
 
 string GethInterface::getEnode() {
-  string enode = dockerExecReturn("cat /root/my_enode.enode");
+  string enode = dockerExecReturn("cat /root/shared/my_enode.enode");
   return removeSpace(enode);
 }	
 
 string GethInterface::getBootstrap() {
-  string enode = dockerExecBootstrapReturn("cat /root/my_enode.enode");
+  string enode = dockerExecBootstrapReturn("cat /root/shared/my_enode.enode");
   return removeSpace(enode);
 }
 
