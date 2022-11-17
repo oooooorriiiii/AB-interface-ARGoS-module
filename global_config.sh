@@ -1,8 +1,8 @@
 #!/bin/sh
 
 USERNAME=`whoami`
-mailto='volker.strobel87@gmail.com'
-DOCKERBASE='/home/volker/Documents/mygithub-software/AB-interface/Blockchain-module'
+mailto='yuu.mori06@gmail.com'
+DOCKERBASE='/home/ymori/software/AB-interface-ymori/Blockchain-module'
 TEMPLATE='./experiments/epuck_EC_locale_template.argos'
 CONTRACT="${DOCKERBASE}/geth/shared/Estimation.sol"
 SCTEMPLATE="${DOCKERBASE}/geth/shared/Estimation.sol_template"
