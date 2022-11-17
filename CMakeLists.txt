@@ -17,7 +17,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # Find the ARGoS package
 find_package(PkgConfig)
-pkg_check_modules(ARGOS REQUIRED argos3_simulator)
+pkg_check_modules(ARGOS REQUIRED)
 set(ARGOS_PREFIX ${ARGOS_PREFIX} CACHE INTERNAL "")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${ARGOS_PREFIX}/share/argos3/cmake)
 message(STATUS "CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}")
